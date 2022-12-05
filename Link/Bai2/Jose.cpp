@@ -31,3 +31,15 @@ int main () {
     cout<< " Nguoi thang la "<< ptr->player<< endl;
     return 0;
 }
+/* 
++) Nhap N
+5
+Nhap M
+2
+ Nguoi thang la 4
++) Nhap N
+5
+Nhap M
+3
+ Nguoi thang la 1
+*/
