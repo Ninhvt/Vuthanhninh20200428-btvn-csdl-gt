@@ -1,4 +1,5 @@
 #include<iostream>
+#include<time.h>
 using namespace std;
 struct  node
 {
@@ -7,7 +8,8 @@ struct  node
 };
 struct node *start,*ptr,*new_node;
 int main () {
-    int M,N,i,count;
+   clock_t begin = clock();
+   int M,N,i,count;
    cout << "Nhap N" << endl;
    cin >> N;
    cout << "Nhap M" << endl;
@@ -27,11 +29,13 @@ int main () {
        ptr= ptr->next;
        } 
         ptr->next = ptr->next->next;
-}
+    }
     cout<< " Nguoi thang la "<< ptr->player<< endl;
+    clock_t end = clock(); //ghi lại thời gian lúc sau
+    cout<<"Thoi gian: "<<(float)(end-begin)/CLOCKS_PER_SEC<<" s"<<endl;
     return 0;
 }
-/* 
+/* a)
 +) Nhap N
 5
 Nhap M
@@ -42,4 +46,6 @@ Nhap M
 Nhap M
 3
  Nguoi thang la 1
+b)
+ĐỘ phức tạp thuật toán là O(n)
 */
