@@ -8,12 +8,12 @@ struct  node
 };
 struct node *start,*ptr,*new_node;
 int main () {
-   clock_t begin = clock();
    int M,N,i,count;
    cout << "Nhap N" << endl;
    cin >> N;
    cout << "Nhap M" << endl;
    cin >> M;
+   clock_t begin = clock();
    node* start = new node;
    start -> player=1;
    ptr = start;
@@ -48,4 +48,10 @@ Nhap M
  Nguoi thang la 1
 b)
 ĐỘ phức tạp thuật toán là O(n)
+Nhap N
+1 000 000
+Nhap M
+1
+ Nguoi thang la 951425
+Thoi gian: 0.077 s
 */
