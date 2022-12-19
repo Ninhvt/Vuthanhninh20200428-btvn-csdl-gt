@@ -237,7 +237,7 @@ void SinhViensameNgaySinh(LinkedList list)
         }
         for(Node *pTmp2=pTmp->link;pTmp2!=NULL;pTmp2=pTmp2->link)
         {
-            if(pTmp->data.ngaySinh.ngay==pTmp2->data.ngaySinh.ngay and !Check[j]) 
+            if(pTmp->data.ngaySinh.ngay==pTmp2->data.ngaySinh.ngay && !Check[j]) 
             { RemoveAfterQ(list,pTmp2,pTmp->data);
 			 XuatNode(pTmp2);
 			 Check[j]=true;
